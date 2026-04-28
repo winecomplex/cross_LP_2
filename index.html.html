@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CROSS INTERNATIONAL Food &amp; Market 2026｜出展募集</title>
+  <meta name="description" content="CROSS INTERNATIONAL Food &amp; Market 2026は、ワインコンプレックスの実績を土台に、ワインを軸として飲食業界に必要な食材・飲料・商材を提案するB2B商談会です。出展料40,000円から。">
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Noto+Sans+JP:wght@400;500;700;900&family=Shippori+Mincho:wght@600;700;800&display=swap');
+
+:root {
+  --navy: #002B49;
+  --orange: #E94E1B;
+  --green: #2E6B29;
+  --gold: #C99518;
+  --cream: #FBF7EE;
+  --cream2: #FFFAF1;
+  --line: #E8DDC8;
+  --ink: #24313A;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Noto Sans JP', sans-serif;
+  color: var(--ink);
+  background: var(--cream2);
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+}
+
+.container-wide {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.container-narrow {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 6rem 1.5rem;
+  text-align: center;
+}
+
+.font-eng {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.font-mincho {
+  font-family: 'Shippori Mincho', serif;
+}
+
+/* Logo */
+.logo-stack {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: .86;
+  text-decoration: none;
+}
+
+.logo-cross,
+.logo-tokyo,
+.logo-intl,
+.logo-year {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.logo-cross {
+  font-weight: 900;
+  color: var(--navy);
+  letter-spacing: -.045em;
+}
+
+.logo-tokyo,
+.logo-intl {
+  color: var(--orange);
+}
+
+.logo-tokyo {
+  font-weight: 900;
+  letter-spacing: -.045em;
+}
+
+.logo-intl {
+  font-weight: 800;
+  letter-spacing: .03em;
+  line-height: 1;
+}
+
+.logo-market {
+  font-family: 'Shippori Mincho', serif;
+  font-weight: 800;
+  color: var(--green);
+  line-height: 1;
+}
+
+.logo-year {
+  font-weight: 900;
+  color: var(--navy);
+  line-height: .9;
+}
+
+/* Header */
+.nav {
+  position: fixed;
+  inset: 0 0 auto 0;
+  z-index: 50;
+  background: rgba(255, 255, 255, .94);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--line);
+}
+
+.nav-inner {
+  height: 78px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0 1.5rem;
+}
+
+.nav-logo {
+  align-items: flex-start;
+}
+
+.nav-logo.logo-stack {
+  align-items: flex-start;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 2rem;
+  font-size: .88rem;
+  font-weight: 900;
+  color: var(--navy);
+}
+
+.nav-menu a {
+  text-decoration: none;
+}
+
+.nav-menu a:hover {
+  color: var(--orange);
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .65rem;
+  border-radius: 999px;
+  padding: 1rem 2rem;
+  font-weight: 900;
+  text-decoration: none;
+  transition: transform .22s ease, box-shadow .22s ease, background .22s ease;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #E94E1B, #F27B2C);
+  color: #fff;
+  box-shadow: 0 18px 34px rgba(233, 78, 27, .24);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 22px 42px rgba(233, 78, 27, .32);
+}
+
+.btn-outline {
+  background: #fff;
+  border: 1px solid rgba(46, 107, 41, .42);
+  color: var(--green);
+}
+
+.btn-outline:hover {
+  background: #F1F8ED;
+  transform: translateY(-2px);
+}
+
+.btn-gold {
+  border-radius: 1rem;
+  background: linear-gradient(135deg, #C99518, #E7B93B);
+  color: #fff;
+  padding: .82rem 1.35rem;
+}
+
+.btn-outline-dark {
+  border: 1px solid rgba(255, 255, 255, .55);
+  color: #fff;
+}
+
+/* Hero */
+.hero {
+  position: relative;
+  overflow: hidden;
+  padding: 9rem 1.5rem 5rem;
+  background: #fffaf1;
+  text-align: center;
+}
+
+.cross-lines {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.cross-lines span {
+  position: absolute;
+  width: 460px;
+  height: 1px;
+  transform: rotate(45deg);
+  opacity: .5;
+}
+
+.l1 { background: var(--gold); top: 8rem; left: -9rem; }
+.l2 { background: var(--navy); top: 25rem; left: -12rem; }
+.l3 { background: var(--orange); top: 7rem; right: -9rem; }
+.l4 { background: var(--green); top: 18rem; right: -8rem; }
+.l5 { background: var(--gold); bottom: 3rem; right: -12rem; }
+
+.hero-logo {
+  margin-bottom: 2rem;
+}
+
+.hero h1,
+.section h2 {
+  font-family: 'Shippori Mincho', serif;
+  color: var(--navy);
+  font-weight: 800;
+  line-height: 1.24;
+}
+
+.hero h1 {
+  margin: 0 0 1.5rem;
+  font-size: clamp(2.35rem, 6vw, 4.6rem);
+}
+
+.lead {
+  max-width: 760px;
+  margin: 0 auto 2.2rem;
+  font-size: 1.08rem;
+  line-height: 2;
+}
+
+.cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+/* Metric cards */
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.2rem;
+  text-align: center;
+}
+
+.card,
+.soft-card {
+  background: rgba(255, 255, 255, .96);
+  border: 1px solid rgba(0, 43, 73, .08);
+  border-radius: 1.75rem;
+  box-shadow: 0 18px 45px rgba(0, 43, 73, .08);
+}
+
+.metric {
+  min-height: 220px;
+  padding: 2rem 1.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.metric .icon {
+  display: none;
+}
+
+.metric-number {
+  margin: 0 0 .95rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: clamp(3.05rem, 5.1vw, 4.1rem);
+  line-height: 1;
+  letter-spacing: -.04em;
+  color: var(--navy);
+}
+
+.metric-number span {
+  margin-left: .08em;
+  font-size: 1.25rem;
+  vertical-align: baseline;
+}
+
+.metric:nth-child(2) .metric-number {
+  color: var(--green);
+}
+
+.metric:nth-child(3) .metric-number,
+.metric-number.price {
+  color: var(--orange);
+  font-size: clamp(2.45rem, 4.1vw, 3.45rem);
+  letter-spacing: -.055em;
+}
+
+.metric-number.price span {
+  font-size: 1.15rem;
+}
+
+.metric h3 {
+  margin: 1rem 0 .75rem;
+  color: var(--navy);
+  font-size: 1.08rem;
+}
+
+.metric p:not(.metric-number),
+.soft-card p,
+.booth-card p {
+  color: #65727d;
+  font-size: .93rem;
+  line-height: 1.8;
+}
+
+.metric p:not(.metric-number) {
+  max-width: 240px;
+  margin: 0 auto;
+}
+
+/* Sections */
+.section-label {
+  margin-bottom: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: .82rem;
+  font-weight: 900;
+  color: var(--orange);
+  letter-spacing: .22em;
+  text-transform: uppercase;
+}
+
+.section h2 {
+  margin: .2rem 0 1.5rem;
+  font-size: clamp(2rem, 4.6vw, 3.8rem);
+}
+
+.section-text {
+  max-width: 800px;
+  margin: 0 auto 2.4rem;
+  font-size: 1rem;
+  line-height: 2;
+}
+
+.grid-3,
+.grid-2,
+.booth-grid,
+.cat-grid {
+  display: grid;
+  gap: 1.2rem;
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  text-align: left;
+}
+
+.grid-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  text-align: left;
+}
+
+.cream {
+  background: var(--cream);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.soft-card {
+  padding: 1.75rem;
+}
+
+.soft-card h3 {
+  margin: .6rem 0;
+  color: var(--navy);
+  font-size: 1.15rem;
+}
+
+.support-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.support-card::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 5px;
+  background: linear-gradient(90deg, var(--orange), var(--gold), var(--green));
+}
+
+.num {
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 1rem;
+  border-radius: 999px;
+  background: var(--gold);
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+}
+
+/* Categories */
+.cat-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.category-card {
+  padding: 1.3rem;
+  border: 1px solid rgba(0, 43, 73, .13);
+  border-radius: 1.2rem;
+  background: #fff;
+  text-align: center;
+  transition: transform .18s ease, border-color .18s ease, box-shadow .18s ease;
+}
+
+.category-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(46, 107, 41, .35);
+  box-shadow: 0 15px 30px rgba(0, 43, 73, .08);
+}
+
+.category-card .emoji {
+  margin-bottom: .5rem;
+  font-size: 1.6rem;
+}
+
+.category-card p {
+  margin: .2rem 0;
+  color: var(--navy);
+  font-weight: 900;
+}
+
+.category-card small {
+  display: block;
+  margin-top: .55rem;
+  color: #65727d;
+  font-size: .78rem;
+  line-height: 1.65;
+}
+
+.special-cat {
+  border-color: rgba(201, 149, 24, .6);
+  background: #FFFCF5;
+}
+
+.category-note {
+  max-width: 760px;
+  margin: 2rem auto 0;
+  padding: 1.3rem;
+  border: 1px solid var(--line);
+  border-radius: 1.4rem;
+  background: var(--cream);
+  color: #65727d;
+  line-height: 1.8;
+}
+
+.category-note strong {
+  color: var(--navy);
+}
+
+/* Booth */
+.notice {
+  max-width: 840px;
+  margin: 0 auto 2rem;
+  padding: 1rem;
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+  background: #fff;
+  color: #65727d;
+  font-size: .9rem;
+  line-height: 1.8;
+}
+
+.booth-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.4rem;
+  text-align: left;
+}
+
+.booth-card {
+  overflow: hidden;
+  border: 1px solid rgba(0, 43, 73, .10);
+  border-radius: 1.75rem;
+  background: #fff;
+  box-shadow: 0 20px 50px rgba(0, 43, 73, .08);
+  transition: transform .22s ease, box-shadow .22s ease;
+}
+
+.booth-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 24px 58px rgba(0, 43, 73, .11);
+}
+
+.booth-card.featured {
+  border: 2px solid var(--gold);
+}
+
+.booth-img-wrap {
+  padding: 16px;
+  background: linear-gradient(180deg, #fffdf8, #f2eadc);
+}
+
+
+.booth-image {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+  display: block;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 43, 73, .09);
+  background: #fff;
+}
+
+.booth-visual {
+  min-height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1.4rem;
+  border: 1px solid rgba(0, 43, 73, .09);
+  border-radius: 20px;
+  background:
+    linear-gradient(90deg, rgba(0, 43, 73, .035) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(0, 43, 73, .035) 1px, transparent 1px),
+    #fff;
+  background-size: 18px 18px;
+  text-align: center;
+}
+
+.visual-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  color: var(--navy);
+  letter-spacing: .12em;
+  font-size: .8rem;
+}
+
+.visual-table {
+  min-height: 98px;
+  display: grid;
+  place-items: center;
+  margin: 0 auto;
+  border: 3px solid rgba(0, 43, 73, .18);
+  border-radius: 18px;
+  background: #fffaf1;
+  box-shadow: 0 14px 24px rgba(0, 43, 73, .08);
+}
+
+.visual-table.split {
+  width: min(100%, 330px);
+  grid-template-columns: 1fr 1fr;
+  overflow: hidden;
+}
+
+.visual-table.single {
+  width: min(100%, 320px);
+}
+
+.visual-table.mini {
+  width: 48%;
+  min-height: 92px;
+}
+
+.visual-zone {
+  width: 100%;
+  min-height: 98px;
+  display: grid;
+  place-items: center;
+  padding: .75rem;
+}
+
+.visual-zone + .visual-zone {
+  border-left: 2px dashed rgba(0, 43, 73, .18);
+}
+
+.zone-a {
+  color: var(--navy);
+}
+
+.zone-b {
+  color: var(--green);
+}
+
+.visual-zone strong,
+.visual-table strong {
+  display: block;
+  color: var(--navy);
+  font-weight: 900;
+}
+
+.visual-zone span,
+.visual-table span {
+  display: block;
+  margin-top: .35rem;
+  color: #65727d;
+  font-size: .82rem;
+  line-height: 1.5;
+}
+
+.visual-wide-row {
+  display: flex;
+  gap: .8rem;
+}
+
+.visual-size {
+  color: #65727d;
+  font-family: 'Montserrat', sans-serif;
+  font-size: .72rem;
+  font-weight: 800;
+  letter-spacing: .04em;
+}
+
+.booth-body {
+  padding: 1.7rem;
+}
+
+.booth-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: .8rem;
+  margin-bottom: .8rem;
+}
+
+.booth-card h3 {
+  margin: 0;
+  color: var(--navy);
+  font-size: 1.45rem;
+}
+
+.booth-price {
+  color: var(--orange);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.plan-note {
+  margin: 0 0 .8rem;
+  font-weight: 900;
+}
+
+.green {
+  color: var(--green);
+}
+
+.orange {
+  color: var(--orange);
+}
+
+/* Outline */
+.info-table {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 1.75rem;
+  background: #fff;
+  box-shadow: 0 10px 28px rgba(0, 43, 73, .05);
+  text-align: left;
+}
+
+.info-row {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+}
+
+.info-row dt,
+.info-row dd {
+  margin: 0;
+  padding: 1rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.info-row dt {
+  background: #fffaf1;
+  color: var(--navy);
+  font-weight: 900;
+}
+
+/* Final */
+.final {
+  position: relative;
+  overflow: hidden;
+  padding: 5rem 1.5rem;
+  background: var(--navy);
+  color: #fff;
+  text-align: center;
+}
+
+.final h2 {
+  color: #fff;
+}
+
+.final p {
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  color: rgba(255, 255, 255, .8);
+  line-height: 2;
+}
+
+.footer {
+  padding: 2.5rem;
+  background: #fff;
+  color: #9aa3aa;
+  font-family: 'Montserrat', sans-serif;
+  font-size: .75rem;
+  letter-spacing: .12em;
+  text-align: center;
+}
+
+.mobile-cta {
+  display: none;
+}
+
+.thin-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--line), transparent);
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .section {
+    padding: 7.2rem 4rem;
+  }
+}
+
+@media (max-width: 980px) {
+  .nav-menu {
+    display: none;
+  }
+
+  .nav-inner {
+    height: 74px;
+  }
+
+  .grid-3,
+  .grid-2,
+  .booth-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cat-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .booth-visual {
+    min-height: 210px;
+  }
+
+  .section {
+    padding: 4.6rem 1.25rem;
+  }
+
+  .mobile-cta {
+    display: block;
+    position: fixed;
+    inset: auto 0 0 0;
+    z-index: 60;
+    padding: 1rem;
+    border-top: 1px solid var(--line);
+    background: rgba(255, 255, 255, .94);
+  }
+
+  .mobile-cta .btn {
+    width: 100%;
+  }
+
+  body {
+    padding-bottom: 5.8rem;
+  }
+
+  .info-row {
+    grid-template-columns: 1fr;
+  }
+
+  .info-row dt {
+    padding-bottom: .4rem;
+  }
+
+  .info-row dd {
+    padding-top: .8rem;
+  }
+
+  .nav .btn-gold {
+    padding: .75rem 1rem;
+    font-size: .82rem;
+  }
+
+  .hero {
+    padding-top: 7.8rem;
+  }
+
+  .hero-logo .logo-cross,
+  .hero-logo .logo-tokyo {
+    font-size: 4rem;
+  }
+
+  .hero-logo .logo-intl {
+    font-size: 1.1rem;
+  }
+
+  .hero-logo .logo-market {
+    font-size: 1.5rem;
+  }
+
+  .hero-logo .logo-year {
+    font-size: 3.2rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .metrics {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .cat-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1 {
+    font-size: 2.3rem;
+  }
+
+  .lead {
+    font-size: 1rem;
+  }
+
+  .booth-top {
+    flex-direction: column;
+  }
+
+  .visual-wide-row {
+    flex-direction: column;
+  }
+
+  .visual-table.mini {
+    width: 100%;
+  }
+}
+  </style>
+</head>
+<body>
+
+<header class="nav"><nav class="container-wide nav-inner"><a class="logo-stack nav-logo" href="#top"><span class="logo-cross" style="font-size:1.2rem">CROSS</span><span class="logo-tokyo" style="font-size:1.2rem">TOKYO</span><span class="logo-intl" style="font-size:.6rem">INTERNATIONAL</span><span class="logo-market" style="font-size:.7rem">Food &amp; Market</span><span class="logo-year" style="font-size:1.05rem">2026</span></a><div class="nav-menu"><a href="#why">強み</a><a href="#support">応援したい商品</a><a href="#categories">募集商材</a><a href="#booth">出展料</a><a href="#outline">開催概要</a></div><a class="btn btn-gold" href="https://info.tokyowinecomplex.com/form-C-international-2026.html" target="_blank" rel="noopener">出展お申し込み</a></nav></header>
+<main id="top" class="hero"><div class="cross-lines"><span class="l1"></span><span class="l2"></span><span class="l3"></span><span class="l4"></span><span class="l5"></span></div><section class="container-narrow" style="position:relative"><div class="logo-stack hero-logo"><span class="logo-cross" style="font-size:clamp(4.2rem,9vw,6rem)">CROSS</span><span class="logo-tokyo" style="font-size:clamp(4.2rem,9vw,6rem)">TOKYO</span><span class="logo-intl" style="font-size:clamp(1.2rem,2.4vw,1.55rem);margin-top:.45rem">INTERNATIONAL</span><span class="logo-market" style="font-size:clamp(1.6rem,3.6vw,2.25rem);margin-top:.45rem">Food &amp; Market</span><span class="logo-year" style="font-size:clamp(3.4rem,7vw,4.5rem);margin-top:.45rem">2026</span></div><h1>ワインを軸に、<br>飲食業界の仕入れが交差する</h1><p class="lead">ワインはもちろん、飲食業界で必要とされる<br>食材・飲料・加工食品を、<br>仕入れに関わるプロへ直接提案できる展示会です。</p><div class="cta-row"><a class="btn btn-primary" href="https://info.tokyowinecomplex.com/form-C-international-2026.html" target="_blank" rel="noopener">出展申込はこちら</a><a class="btn btn-outline" href="#categories">募集商材を見る</a></div><div class="metrics">
+  <div class="card metric">
+    <p class="metric-number">93<span>%</span></p>
+    <h3>仕入れに関わる来場者</h3>
+    <p>商品選定・仕入れの決定、関与、サポートに関わる来場者が大半を占めます。</p>
+  </div>
+  <div class="card metric">
+    <p class="metric-number">88<span>%</span></p>
+    <h3>商談成果を実感</h3>
+    <p>商談が前進した、または成果につながったと感じた出展社が多数を占めました。</p>
+  </div>
+  <div class="card metric">
+    <p class="metric-number price">¥40,000<span>〜</span></p>
+    <h3>出展しやすい価格</h3>
+    <p>飲食業界向けの販路開拓を、無理のないコストで始めやすい出展設計です。</p>
+  </div>
+</div></section></main><div class="thin-divider"></div>
+<section id="why" class="section"><div class="container-narrow"><p class="section-label">WHY WINE COMPLEX</p><h2>ワインコンプレックスだから<br>できること</h2><p class="section-text">CROSS INTERNATIONALは、ゼロから立ち上げる食品展示会ではありません。<br>長年にわたりプロ向け試飲商談会を開催してきた、<br>ワインコンプレックスの来場者基盤と運営実績を土台にしています。<br><br>だからこそ、食材や飲料を“単なる商品”としてではなく、<br>ワインとの相性、メニュー提案、店舗価値向上の文脈で届けることができます。</p></div></section>
+<section id="support" class="section cream"><div class="container-narrow"><p class="section-label">WHO WE SUPPORT</p><h2>CROSSが出会いをつくりたい商品</h2><p class="section-text">小さなインポーター、国産で頑張る生産者、中小企業、<br>地域メーカー、高級食材を扱う事業者まで。<br>飲食業界に届けたい価値ある商品を歓迎します。</p><div class="grid-2"><div class="soft-card support-card"><div class="num">1</div><h3>まだ広く知られていない良品</h3><p>いい商品を持っているのに、どこでPRすればよいかわからない。<br>そんな商品に飲食業界との接点をつくります。</p></div><div class="soft-card support-card"><div class="num">2</div><h3>高級食材・こだわり食材</h3><p>レストラン、ホテル、ワインバーにふさわしい、<br>品質やストーリーのある食材。</p></div><div class="soft-card support-card"><div class="num">3</div><h3>飲食業界の個性づくりにつながる商品</h3><p>ワインとの相性、メニュー提案、客単価向上など、<br>店舗の価値を高める商材。</p></div><div class="soft-card support-card"><div class="num">4</div><h3>小さくても、個性のあるつくり手</h3><p>国産の小規模生産者やクラフトメーカー、<br>地域の優れた商品などを歓迎します。</p></div></div></div></section>
+<section id="categories" class="section"><div class="container-wide"><p class="section-label">EXHIBIT CATEGORIES</p><h2>ワインに関わる飲食業界へ<br>提案したい商材を募集します</h2><p class="section-text">「現場でどう使えるか」<br>「どんな料理・一皿・サービスにつながるか」まで<br>伝えられる商材を歓迎します。</p><div class="cat-grid"><div class="category-card"><div class="emoji">🍷</div><p>ワイン・酒類</p><small>ワイン／クラフトビール／スピリッツ／ノンアルコール</small></div><div class="category-card"><div class="emoji">🧀</div><p>チーズ・シャルキュトリ</p><small>生ハム／加工肉／チーズ／ペアリング食材</small></div><div class="category-card"><div class="emoji">🍖</div><p>ジビエ・肉加工品</p><small>レストラン向け高付加価値食材</small></div><div class="category-card"><div class="emoji">🥫</div><p>魚介・缶詰</p><small>保存性・提案性のある食品商材</small></div><div class="category-card"><div class="emoji">🌍</div><p>輸入食品・加工食品</p><small>業務用／小売向け／メニュー提案商材</small></div><div class="category-card"><div class="emoji">🫒</div><p>調味料・オイル</p><small>オリーブオイル／ソース／調味料類</small></div><div class="category-card"><div class="emoji">🍫</div><p>スナック・チョコ</p><small>酒類との相性を提案できる食品</small></div><div class="category-card special-cat"><div class="emoji">▤</div><p>ワインセラー・関連機材</p><small>グラス／什器／保存機器なども歓迎</small></div></div><div class="category-note"><p><strong>掲載カテゴリ以外の商材もご相談ください</strong><br>飲食業界に提案したい商材であれば、食品・飲料・機材を問わずご相談を承ります。</p></div><div style="margin-top:2rem"><a class="btn btn-outline" href="mailto:info@tokyowinecomplex.com?subject=CROSS%20INTERNATIONAL%202026%E5%87%BA%E5%B1%95%E5%95%86%E6%9D%90%E3%81%AE%E7%9B%B8%E8%AB%87">info@tokyowinecomplex.com に相談する</a></div></div></section>
+<section id="booth" class="section cream"><div class="container-wide"><p class="section-label">BOOTH PLAN</p><h2>出展イメージが伝わる<br>3つのブースプラン</h2><p class="section-text">ブースはテーブルを配置するシンプルな形式です。<br>スタンダードブースは1800×900mmのテーブル1台、<br>ワイドブースは同テーブルを2台並べて使用します。</p><p class="notice">背面バナーや装飾物をご希望の場合は、各社にてご用意ください。<br>ワイドブースは1社での出展を前提としたプランです。</p><div class="booth-grid"><div class="booth-card"><div class="booth-img-wrap"><img class="booth-image" src="images/booth-half.webp" alt="ハーフブースの出展イメージ" loading="lazy"></div><div class="booth-body"><div class="booth-top"><h3>ハーフブース</h3><p class="booth-price">¥40,000</p></div><p class="plan-note green">1テーブルを2社で共有</p><p>A社・B社で半分ずつ使用する形式。<br>画像例では、A社は生ハム・加工肉、<br>B社はオリーブオイルを展示しています。</p></div></div><div class="booth-card featured"><div class="booth-img-wrap"><img class="booth-image" src="images/booth-standard.webp" alt="スタンダードブースの出展イメージ" loading="lazy"></div><div class="booth-body"><div class="booth-top"><h3>スタンダードブース</h3><p class="booth-price">¥68,000</p></div><p class="plan-note orange">1800×900mm テーブル1台</p><p>CROSS INTERNATIONALの基本プラン。<br>ワイン、食品、飲料など、<br>商品を見やすく並べて商談できます。</p></div></div><div class="booth-card"><div class="booth-img-wrap"><img class="booth-image" src="images/booth-wide.webp" alt="ワイドブースの出展イメージ" loading="lazy"></div><div class="booth-body"><div class="booth-top"><h3>ワイドブース</h3><p class="booth-price">¥122,400</p></div><p class="plan-note green">1800×900mm テーブル2台</p><p>テーブル2台を横に並べて使用。<br>商品点数が多い場合や、<br>ワインセラーなど周辺機器も見せたい場合に適しています。</p></div></div></div></div></section>
+<section id="outline" class="section"><div class="container-narrow"><p class="section-label">EVENT OUTLINE</p><h2>開催概要</h2><div class="info-table"><dl><div class="info-row"><dt>名称</dt><dd>CROSS INTERNATIONAL Food &amp; Market 2026</dd></div><div class="info-row"><dt>日時</dt><dd>2026年9月24日（木）12:00－17:00</dd></div><div class="info-row"><dt>会場</dt><dd>東京・浜松町｜東京都立産業貿易センター浜松町館</dd></div><div class="info-row"><dt>対象来場者</dt><dd>飲食店、酒販店、ホテル、バイヤー、ソムリエ、シェフ等の業界関係者</dd></div><div class="info-row"><dt>出展申込締切</dt><dd style="font-weight:900;color:var(--orange)">2026年8月9日（日）</dd></div></dl></div></div></section>
+<section class="final"><div class="container-narrow"><h2>飲食業界向け商材の販路開拓を<br>ここから始める</h2><p>ワインコンプレックスの来場者基盤を活かし、<br>飲食店、酒販店、ホテル、バイヤー、シェフなど、<br>飲食業界のプロへ直接アプローチ。<br>新しい商談機会を、ここから始めましょう。</p><div class="cta-row" style="margin-bottom:0"><a class="btn btn-primary" href="https://info.tokyowinecomplex.com/form-C-international-2026.html" target="_blank" rel="noopener">出展申込はこちら</a><a class="btn btn-outline-dark" href="https://admin.prius-pro.jp/m/winecomplex/download.php?p=%241%243286%246e6ck6jWO63qygL3BZQZp1p&b=10&i=2013" target="_blank" rel="noopener">出展要項はこちら</a></div></div></section><footer class="footer">© 2026 SEEDS BANK CO., LTD. ALL RIGHTS RESERVED.</footer><div class="mobile-cta"><a class="btn btn-primary" href="https://info.tokyowinecomplex.com/form-C-international-2026.html" target="_blank" rel="noopener">出展申込はこちら</a></div>
+</body>
+</html>
